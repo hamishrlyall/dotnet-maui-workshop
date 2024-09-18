@@ -2,9 +2,10 @@
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
+	public MainPage(MonkeysViewModel _ViewModel)
 	{
 		InitializeComponent();
+		BindingContext = _ViewModel;
 	}
 }
 
